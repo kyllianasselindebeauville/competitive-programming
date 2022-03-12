@@ -1,6 +1,6 @@
 // C++ includes used for precompiling -*- C++ -*-
 
-// Copyright (C) 2003-2021 Free Software Foundation, Inc.
+// Copyright (C) 2003-2022 Free Software Foundation, Inc.
 //
 // This file is part of the GNU ISO C++ Library.  This library is free
 // software; you can redistribute it and/or modify it under the
@@ -54,9 +54,11 @@
 #include <ccomplex>
 #include <cfenv>
 #include <cinttypes>
+#include <cstdalign>
 #include <cstdbool>
 #include <cstdint>
 #include <ctgmath>
+#include <cuchar>
 #endif
 
 // C++
@@ -110,8 +112,8 @@
 #include <system_error>
 #include <thread>
 #include <tuple>
-#include <type_traits>
 #include <typeindex>
+#include <type_traits>
 #include <unordered_map>
 #include <unordered_set>
 #endif
@@ -126,11 +128,12 @@
 // #include <execution>
 #include <filesystem>
 #include <optional>
+#include <memory_resource>
 #include <string_view>
 #include <variant>
 #endif
 
-#if __cplusplus > 201703L
+#if __cplusplus >= 202002L
 #include <barrier>
 #include <bit>
 #include <compare>
@@ -141,10 +144,14 @@
 #include <latch>
 #include <numbers>
 #include <ranges>
-#include <semaphore>
-#include <source_location>
 #include <span>
 #include <stop_token>
+#include <semaphore>
+#include <source_location>
 #include <syncstream>
 #include <version>
+#endif
+
+#if __cplusplus > 202002L
+#include <spanstream>
 #endif
