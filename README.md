@@ -1,3 +1,3 @@
 # Template for competitive programming
 
-- [Google Kickstart](kickstart.cc)
+- [Google Kick Start](kickstart.cc)
