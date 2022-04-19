@@ -1,4 +1,6 @@
-# Template for competitive programming
+# Competitive Programming
+
+Template for competitive programming:
 
 - [Google Kick Start](kickstart.cc)
 
